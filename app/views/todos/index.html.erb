@@ -5,6 +5,7 @@
 
     <li>
       <%= todo.title %>
+      <%= button_to "Mark complete", todo_completion_path(todo) %>
     </li>
   <% end %>
 </ul>

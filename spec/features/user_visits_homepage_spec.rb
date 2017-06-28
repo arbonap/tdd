@@ -1,4 +1,4 @@
-require "spec_helper"
+require "rails_helper"
 
 feature "User visit homepage" do #describe overarching functionality
   scenario "successfully" do
