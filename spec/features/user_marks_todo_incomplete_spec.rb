@@ -1,14 +1,15 @@
 require "rails_helper"
 
-feature "User competes todo" do
+feature "User marks todo incomplete" do
   scenario "successfully" do
     sign_in
 
     create_todo "Buy milk"
 
     click_on "Mark complete"
-    
+    click_on "Mark incomplete"
     # expect(page).to have_css ".todos li.completed", text: "Buy milk "
+    # expect(page).to display_todo "Buy milk"
   end
 
   def create_todo(todo_title)
